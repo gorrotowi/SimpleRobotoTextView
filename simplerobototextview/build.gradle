@@ -2,6 +2,30 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'SimpleRobotoTextView'
+
+    publishedGroupId = 'com.gorrotowi.simplerobototextview'
+    libraryName = 'SimpleRobotoTextView'
+    artifact = 'simplerobototextview'
+
+    libraryDescription = 'A simple Android Kotlin library to use Roboto Font'
+
+    siteUrl = 'https://github.com/gorrotowi/SimpleRobotoTextView'
+    gitUrl = 'https://github.com/gorrotowi/SimpleRobotoTextView.git'
+
+    libraryVersion = '0.8'
+
+    developerId = 'gorrotowi'
+    developerName = 'Sebastian Tellez'
+    developerEmail = 'sebastian.tellez.o@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -41,3 +65,6 @@ buildscript {
 repositories {
     mavenCentral()
 }
+
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
