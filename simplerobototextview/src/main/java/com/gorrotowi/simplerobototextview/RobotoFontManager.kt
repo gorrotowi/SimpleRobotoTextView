@@ -12,10 +12,20 @@ import android.widget.TextView
  * @author gorrotowi on 25/03/16.
  */
 class RobotoFontManager(val context: Context?) {
+
+    /**
+     * Init default font to view
+     * @param view you want asing default font
+     */
     fun initStyle(view: View) {
         setTypeFace(view)
     }
 
+    /**
+     * Init custom font to view
+     * @param view you want asing font
+     * @param attrs attributeset with value of font
+     */
     fun initStyle(view: View, attrs: AttributeSet) {
         val typedArray = context?.theme?.obtainStyledAttributes(attrs, R.styleable.roboto_font, 0, 0)
         var tp: Typeface
@@ -46,6 +56,11 @@ class RobotoFontManager(val context: Context?) {
         setTypeFace(view, tp)
     }
 
+    /**
+     * This function asing typeface to view
+     * @param view view you want asing the typeface font
+     * @param tp this is the typeface
+     */
     fun setTypeFace(view: View, tp: Typeface = Typeface.createFromAsset(context?.assets, "fonts/Roboto-Regular.ttf")) {
         when (view) {
             is TextView -> view.typeface = tp
