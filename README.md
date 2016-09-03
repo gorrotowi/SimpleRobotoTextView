@@ -3,6 +3,8 @@ Simple Roboto TextView
 
 A simple Roboto View for your Android App writed in Kotlin
 
+![](https://cdn.rawgit.com/gorrotowi/SimpleRobotoTextView/cb361eff0f7cc8fae9f23a4feb3340ff1a3866c4/screenshots/RobotoTextViewExample.png)
+
 Gradle
 ------
 ```
