@@ -7,7 +7,7 @@ A simple Roboto View for your Android App writed in Kotlin
 
 Gradle
 ------
-```
+```gradle
 dependencies {
     ...
     compile 'com.gorrotowi.simplerobototextview:simplerobototextview:0.8'
@@ -16,7 +16,7 @@ dependencies {
 
 Maven
 -----
-```
+```xml
 <dependency>
   <groupId>com.gorrotowi.simplerobototextview</groupId>
   <artifactId>simplerobototextview</artifactId>
@@ -33,6 +33,25 @@ Usage
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:font="regular" />
+```
+
+Also you can use
+
+```xml
+<com.gorrotowi.simplerobototextview.RobotoEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:font="regular" />
+
+<!-- OR -->
+
+<com.gorrotowi.simplerobototextview.RobotoButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:font="regular" />
+
 ```
 
 Fonts you can use
