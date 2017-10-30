@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SimpleRobotoTextView.iml" filepath="$PROJECT_DIR$/SimpleRobotoTextView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/simplerobototextview/simplerobototextview.iml" filepath="$PROJECT_DIR$/simplerobototextview/simplerobototextview.iml" />
+      <module fileurl="file:///Volumes/TowiHD/Repos/SimpleRobotoTextView/SimpleRobotoTextView.iml" filepath="/Volumes/TowiHD/Repos/SimpleRobotoTextView/SimpleRobotoTextView.iml" />
+      <module fileurl="file:///Volumes/TowiHD/Repos/SimpleRobotoTextView/app/app.iml" filepath="/Volumes/TowiHD/Repos/SimpleRobotoTextView/app/app.iml" />
+      <module fileurl="file:///Volumes/TowiHD/Repos/SimpleRobotoTextView/simplerobototextview/simplerobototextview.iml" filepath="/Volumes/TowiHD/Repos/SimpleRobotoTextView/simplerobototextview/simplerobototextview.iml" />
     </modules>
   </component>
 </project>

@@ -17,4 +17,10 @@ class RobotoEditText : EditText {
             RobotoFontManager(context).initStyle(this, attrs)
         }
     }
+
+    fun setMaxLength(length: Int) {
+        val FilterArray = arrayOfNulls<InputFilter>(1)
+        FilterArray[0] = InputFilter.LengthFilter(length)
+        this.filters = FilterArray
+    }
 }
