@@ -7,12 +7,9 @@ import android.widget.Button
 /**
  * @author gorrotowi on 25/03/16.
  */
-class RobotoButton : Button {
-    constructor(context: Context) : super(context) {
-        RobotoFontManager(context).initStyle(this)
-    }
+class RobotoButton @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) : Button(context, attrs) {
 
-    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+    init {
         if (!isInEditMode) {
             RobotoFontManager(context).initStyle(this, attrs)
         }

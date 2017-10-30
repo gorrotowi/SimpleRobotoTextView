@@ -7,12 +7,9 @@ import android.widget.TextView
 /**
  * @author gorrotowi on 25/03/16.
  */
-class RobotoTextView : TextView {
-    constructor(context: Context) : super(context) {
-        RobotoFontManager(context).initStyle(this)
-    }
+class RobotoTextView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) : TextView(context, attrs) {
 
-    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+    init {
         if (!isInEditMode) {
             RobotoFontManager(context).initStyle(this, attrs)
         }
