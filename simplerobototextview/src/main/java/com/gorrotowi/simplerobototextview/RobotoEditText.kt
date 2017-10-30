@@ -8,20 +8,18 @@ import android.widget.EditText
 /**
  * @author gorrotowi on 25/03/16.
  */
-class RobotoEditText : EditText {
-    constructor(context: Context) : super(context) {
-        RobotoFontManager(context).initStyle(this)
-    }
+class RobotoEditText @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) : EditText(context, attrs) {
 
-    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+    init {
         if (!isInEditMode) {
             RobotoFontManager(context).initStyle(this, attrs)
         }
     }
 
-    fun setMaxLength(length: Int) {
-        val FilterArray = arrayOfNulls<InputFilter>(1)
-        FilterArray[0] = InputFilter.LengthFilter(length)
-        this.filters = FilterArray
+    fun setMaxtLengt(length: Int) {
+        val filterArray = arrayOfNulls<InputFilter>(1)
+        filterArray[0] = InputFilter.LengthFilter(length)
+        this.filters = filterArray
     }
+
 }
