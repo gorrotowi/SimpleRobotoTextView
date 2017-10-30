@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/gorrotowi/SimpleRobotoTextView'
     gitUrl = 'https://github.com/gorrotowi/SimpleRobotoTextView.git'
 
-    libraryVersion = '0.8'
+    libraryVersion = '0.9'
 
     developerId = 'gorrotowi'
     developerName = 'Sebastian Tellez'
