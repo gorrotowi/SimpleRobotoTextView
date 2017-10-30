@@ -1,6 +1,7 @@
 package com.gorrotowi.simplerobototextview
 
 import android.content.Context
+import android.text.InputFilter
 import android.util.AttributeSet
 import android.widget.EditText
 
